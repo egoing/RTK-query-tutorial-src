@@ -2,6 +2,7 @@
   "name": "rtk-query",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://localhost:9999/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "npx json-server --port 9999 --watch db.json"
   },
   "eslintConfig": {
     "extends": [
